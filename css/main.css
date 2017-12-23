@@ -1,0 +1,20 @@
+.car {
+  background-image: url('../assets/images/car.gif');
+}
+
+.img-splash {
+  width: 50%;
+}
+
+.color-degradiend {
+  background: linear-gradient(to bottom right, #530060, #e19);
+  height: 669px;display: table;
+}
+
+.vertical-align {
+  transform: translateY(150%);
+}
+
+.car {
+
+}
