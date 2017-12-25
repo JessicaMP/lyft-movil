@@ -1,5 +1,6 @@
 $(function() {
   setTimeout(function() {
-    $('.color-degradiend').fadeOut(500);
-  }, 3500);
+    $('.color-degradiend').fadeOut();
+    $('section:last').removeClass('hide');
+  }, 4000);
 });

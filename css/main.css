@@ -1,20 +1,39 @@
-.car {
-  background-image: url('../assets/images/car.gif');
-}
-
 .img-splash {
   width: 50%;
 }
 
 .color-degradiend {
   background: linear-gradient(to bottom right, #530060, #e19);
-  height: 669px;display: table;
+  height: 669px;
 }
 
 .vertical-align {
   transform: translateY(150%);
 }
 
-.car {
+.img-white-small {
+  width: 25%;
+}
 
+.city {
+  background-image: url('../assets/images/city3.gif');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.width-100 {
+  width: 100%;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.btn {
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.btn:hover {
+  background: linear-gradient(to bottom right, #530060, #e19);
 }
