@@ -4,6 +4,9 @@
 
 .color-degradiend {
   background: linear-gradient(to bottom right, #530060, #e19);
+}
+
+.height-splash {
   height: 669px;
 }
 
@@ -20,20 +23,59 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 .width-100 {
   width: 100%;
-  margin-top: 80px;
-  margin-bottom: 80px;
 }
 
-.btn {
+.margin {
+    margin: 80px 0;
+}
+
+.btn-sign-up {
   background-color: transparent;
   border: 2px solid white;
 }
 
-.btn:hover {
+.btn-sign-up:hover {
   background: linear-gradient(to bottom right, #530060, #e19);
+}
+
+/*Estilos para Page 1*/
+
+nav i.material-icons {
+  display: block;
+  font-size: 38px;
+  height: 56px;
+  line-height: 38px;
+}
+
+.banderas {
+  width: 30%;
+}
+
+.min-width {
+  min-width: 0px;
+}
+
+.dropdown-content li {
+  min-height: 30px;
+  margin-top: 5px;
+}
+
+.btn i {
+transform: rotate(90deg);
+}
+
+.space {
+  margin: 30px 0;
+}
+
+.border {
+  border: 2px solid black;
+}
+
+.car {
+  width: 80%;
 }
