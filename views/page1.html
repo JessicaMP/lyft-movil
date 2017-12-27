@@ -25,27 +25,31 @@
       <div class="progress white space">
         <div class="indeterminate pink darken-2"></div>
       </div>
+      <div class="container">
+        <div class="row space">
+        <form class="col s12">
 
-      <div class="row space">
-      <form class="col s12">
+            <div class="col s4 offset-s1">
+              <!--Pais para seleccionar -->
+              <a class='btn white border' href='#' data-activates='dropdown1'>
+                <img id="mexico" src="../assets/images/mexico.png" alt="Bandera Mexicana" class="responsive-img"><i class="material-icons pink-text">play_arrow</i>
+              </a>
+              <!-- Dropdown Structure -->
+              <ul id='dropdown1' class='dropdown-content min-width hide'>
+                <li><center><img id="colombia" value="option2" src="../assets/images/colombia.png" alt="Bandera Colombiana" class="responsive-img"></center></li>
+                <li><center><img  value="option3" src="../assets/images/peru.png" alt="Bandera Peruana" class="responsive-img"></li>
+                <li><center><img  value="option4" src="../assets/images/usa.png" alt="Bandera Norte Americana" class="responsive-img"></center></li>
+              </ul>
+            </div>
+            <!--Ingresar número-->
+            <div class="col s6 border">
+              <input id="input_text" type="text" placeholder="52">
+            </div>
 
-          <div class="col s4 offset-s1">
-            <!--Pais para seleccionar -->
-            <a class='btn white border' href='#' data-activates='dropdown1'><img src="../assets/images/mexico.jpg" alt="Bandera Mexicana" class="img-splash"><i class="material-icons pink-text">play_arrow</i></a>
-            <!-- Dropdown Structure -->
-            <ul id='dropdown1' class='dropdown-content min-width hide'>
-              <li><center><img src="../assets/images/colombia.jpg" alt="Bandera Mexicana" class="banderas"></center></li>
-              <li><center><img src="../assets/images/peru.gif" alt="Bandera Mexicana" class="banderas"></li>
-              <li><center><img src="../assets/images/usa.gif" alt="Bandera Mexicana" class="banderas"></center></li>
-            </ul>
-          </div>
-          <!--Ingresar número-->
-          <div class="col s6 border">
-            <input id="input_text" type="text" placeholder="52">
-          </div>
+        </form>
+      </div>
 
-      </form>
-    </div>
+
 
     <center><p class="space">We´ll send a text to verify your phone</p></center>
     <figure>
@@ -55,7 +59,7 @@
     <footer>
       <div class="row space">
       <div class="col s12">
-        <a class="waves-effect waves-light btn-large col s12 grey lighten-2">Next</a>
+        <a  id="next" class="waves-effect waves-light btn-large col s12 grey lighten-2">Next</a>
 
       </div>
     </footer>

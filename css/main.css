@@ -79,3 +79,8 @@ transform: rotate(90deg);
 .car {
   width: 80%;
 }
+
+.btn-next {
+  background: linear-gradient(to bottom right, #530060, #e19);
+  text-transform: capitalize;
+}
