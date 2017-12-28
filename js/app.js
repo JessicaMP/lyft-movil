@@ -48,6 +48,7 @@ $('#code').keyup(function() {
   } else if ($('#code').val().length == 3) {
     $('#next2').removeClass('grey lighten-2 disabled');
     $('#next2').addClass('btn-next');
+    $('#next2').attr('href', 'page3.html');
   }
 });
 
