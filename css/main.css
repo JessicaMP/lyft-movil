@@ -84,3 +84,19 @@ transform: rotate(90deg);
   background: linear-gradient(to bottom right, #530060, #e19);
   text-transform: capitalize;
 }
+/*Estilos Page 3*/
+
+.icon-user {
+  margin-top: 15px;
+  right: -20px;
+}
+
+#check p:last-child {
+  margin-bottom: 0;
+  width: 200px;
+}
+
+/*Estilos Page 4*/
+.background-white {
+  background-color: white;
+}
