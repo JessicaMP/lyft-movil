@@ -14,7 +14,7 @@
 ## **Page 2**
 ![Sin titulo](assets/docs/5.png)
 
-![Sin titulo](assets/docs/6.png)
+![Sin titulo](assets/docs/6.PNG)
 
 ![Sin titulo](assets/docs/7.png)
 
