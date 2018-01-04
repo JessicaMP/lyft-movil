@@ -19,13 +19,13 @@ var banderas = [
     // mexico
     'name': 'mexico',
     'image': '../assets/images/mexico.png',
-    'codigo': '007',
+    'codigo': '+52',
   },
   {
     // colombia
     'name': 'colombia',
     'image': '../assets/images/colombia.png',
-    'codigo': '009',
+    'codigo': '+57',
   },
   {
     // peru
@@ -43,22 +43,9 @@ var banderas = [
 
 // Banderas
 $('img.responsive-img').click(function() {
-  /* for (i = 0; i < banderas.length; i++) {
-    if ($(this).data('name') === banderas[i].name) {
-      $(this).attr('src', banderas[i].image);
-      console.log($(this));
-
-      if ($('ul :first-child')) {
-        $('#mexico').attr('src', '../assets/images/colombia.png');
-        $('#colombia').attr('src', '../assets/images/mexico.png');
-      } else if ($('ul :last-child')) {
-        $('#mexico').attr('src', '../assets/images/usa.png');
-        $('#usa').attr('src', '../assets/images/mexico.png');
-      }
-      }*/
   for (i = 0; i < banderas.length; i++) {
     if ($(this).data('name') === banderas[i].name) {
-      $('#mexico').attr('src', banderas[i].image);
+      $('#bander-view').attr('src', banderas[i].image);
       $('#input_text').val(banderas[i].codigo);
     }
   }
@@ -70,7 +57,7 @@ $('#input_text').keyup(function() {
   if ($('#input_text').val().length < 10) {
     $('#next').addClass('disabled');
     $('#next').removeClass('btn-next');
-  } else if ($('#input_text').val().length == 10) {
+  } else if ($('#input_text').val().length === 10) {
     $('#next').removeClass('grey lighten-2 disabled');
     $('#next').addClass('btn-next');
   }
@@ -97,7 +84,7 @@ $('#code').keyup(function() {
   if ($('#code').val().length < 3) {
     $('#next2').addClass('disabled');
     $('#next2').removeClass('btn-next');
-  } else if ($('#code').val().length == 3) {
+  } else if ($('#code').val().length === 3) {
     $('#next2').removeClass('grey lighten-2 disabled');
     $('#next2').addClass('btn-next');
     $('#next2').attr('href', 'page3.html');
@@ -109,7 +96,7 @@ $('#First-name').keyup(function() {
   if ($('#First-name').val().length < 3) {
     $('#next3').addClass('disabled');
     $('#next3').removeClass('btn-next');
-  } else if ($('#First-name').val().length == 3) {
+  } else if ($('#First-name').val().length === 3) {
     $('#next3').removeClass('grey lighten-2 disabled');
     $('#next3').addClass('btn-next');
   }
