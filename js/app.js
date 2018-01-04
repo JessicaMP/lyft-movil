@@ -8,11 +8,63 @@ $(function() {
 $('.button-collapse').sideNav();
 
 /* __________________Page 1________________*/
-$('a.btn.white').click(function() {
+$('i.material-icons').on('click', function() {
   $('#dropdown1').toggleClass('hide');
 });
 
-$('#dropdown1').attr({'style': 'width: 90px; position: absolute; top: 158px; left: 108px; display: block; opacity: 1'});
+$('#dropdown1').attr({'style': 'width: 90px; position: absolute; top: 158px; left: 58px; display: block; opacity: 1'});
+
+var banderas = [
+  {
+    // mexico
+    'name': 'mexico',
+    'image': '../assets/images/mexico.png',
+    'codigo': '007',
+  },
+  {
+    // colombia
+    'name': 'colombia',
+    'image': '../assets/images/colombia.png',
+    'codigo': '009',
+  },
+  {
+    // peru
+    'name': 'peru',
+    'image': '../assets/images/peru.png',
+    'codigo': '+51',
+  },
+  {
+    // usa
+    'name': 'usa',
+    'image': '../assets/images/usa.png',
+    'codigo': '008',
+  }
+];
+
+// Banderas
+$('img.responsive-img').click(function() {
+  /* for (i = 0; i < banderas.length; i++) {
+    if ($(this).data('name') === banderas[i].name) {
+      $(this).attr('src', banderas[i].image);
+      console.log($(this));
+
+      if ($('ul :first-child')) {
+        $('#mexico').attr('src', '../assets/images/colombia.png');
+        $('#colombia').attr('src', '../assets/images/mexico.png');
+      } else if ($('ul :last-child')) {
+        $('#mexico').attr('src', '../assets/images/usa.png');
+        $('#usa').attr('src', '../assets/images/mexico.png');
+      }
+      }*/
+  for (i = 0; i < banderas.length; i++) {
+    if ($(this).data('name') === banderas[i].name) {
+      $('#mexico').attr('src', banderas[i].image);
+      $('#input_text').val(banderas[i].codigo);
+    }
+  }
+});
+
+
 // Habilitando boton deacuerdo al contenido
 $('#input_text').keyup(function() {
   if ($('#input_text').val().length < 10) {

@@ -10,10 +10,6 @@
   height: 669px;
 }
 
-.vertical-align {
-  transform: translateY(150%);
-}
-
 .img-white-small {
   width: 25%;
 }
@@ -25,12 +21,17 @@
   background-size: cover;
 }
 
+.color-degradiend, .city {
+  min-height: 100%;
+  position: absolute;
+}
+
 .width-100 {
   width: 100%;
 }
 
 .margin {
-    margin: 80px 0;
+  margin: 80px 0;
 }
 
 .btn-sign-up {
@@ -48,7 +49,6 @@ nav i.material-icons {
   display: block;
   font-size: 38px;
   height: 56px;
-  line-height: 38px;
 }
 
 .banderas {
@@ -65,7 +65,7 @@ nav i.material-icons {
 }
 
 .btn i {
-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .space {
@@ -76,14 +76,12 @@ transform: rotate(90deg);
   border: 2px solid black;
 }
 
-.car {
-  width: 80%;
-}
-
 .btn-next {
   background: linear-gradient(to bottom right, #530060, #e19);
   text-transform: capitalize;
 }
+
+
 /*Estilos Page 3*/
 
 .icon-user {
