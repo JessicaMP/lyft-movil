@@ -6,13 +6,16 @@ $(function() {
 });
 
 $('.button-collapse').sideNav();
-
 /* __________________Page 1________________*/
 $('i.material-icons').on('click', function() {
   $('#dropdown1').toggleClass('hide');
 });
 
 $('#dropdown1').attr({'style': 'width: 90px; position: absolute; top: 158px; left: 58px; display: block; opacity: 1'});
+
+$('#input_text').click(function() {
+  $('#dropdown1').addClass('hide');
+});
 
 var banderas = [
   {
@@ -37,7 +40,7 @@ var banderas = [
     // usa
     'name': 'usa',
     'image': '../assets/images/usa.png',
-    'codigo': '008',
+    'codigo': '+516',
   }
 ];
 

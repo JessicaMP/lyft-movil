@@ -6,6 +6,10 @@
   background: linear-gradient(to bottom right, #530060, #e19);
 }
 
+.vertical-align {
+   transform: translateY(150%);
+ }
+
 .height-splash {
   height: 669px;
 }
@@ -81,6 +85,9 @@ nav i.material-icons {
   text-transform: capitalize;
 }
 
+input[placeholder] {
+  text-align: center;
+}
 
 /*Estilos Page 3*/
 
