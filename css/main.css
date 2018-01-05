@@ -89,6 +89,13 @@ input[placeholder] {
   text-align: center;
 }
 
+/*Estilos Page 2*/
+@media (max-width: 560px) {
+  .title-page2 {
+    width: 100%;
+  }
+}
+
 /*Estilos Page 3*/
 
 .icon-user {

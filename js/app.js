@@ -69,30 +69,42 @@ $('#input_text').keyup(function() {
 function rand_code(chars, lon) {
   code = '';
   for (x = 0; x < lon; x++) {
-    rand = Math.floor(Math.random() * chars.length);
-    code += chars.substr(rand, 1);
+    localStorage.labCode = Math.floor(Math.random() * chars.length);
+    code += chars.substr(localStorage.labCode, 1);
+    // Almacena el numero ingresado
+    localStorage.input_text = $('#input_text').val();
   }
   return code;
 }
 caracteres = '0123456789';
 longitud = 3;
+
 // Mostrando codigo aleatorio
 $('#next').click(function() {
   alert('Tu codigo LAB -' + rand_code(caracteres, longitud));
   $('#next').attr('href', 'page2.html');
 });
+console.log('Tu codigo LAB -' + rand_code(caracteres, longitud));
 
 /* __________________Page 2________________*/
+$('#number').text($('#number').text() + ' ' + localStorage.input_text);
+
 $('#code').keyup(function() {
-  if ($('#code').val().length < 3) {
-    $('#next2').addClass('disabled');
+  if ($(this).val() && ($(this).val().length = 3)) {
+    if (('LAB-' + $(this).val()) === 'LAB -' + rand_code(caracteres, longitud)) {
+    /* $('#next2').addClass('disabled');
     $('#next2').removeClass('btn-next');
   } else if ($('#code').val().length === 3) {
     $('#next2').removeClass('grey lighten-2 disabled');
     $('#next2').addClass('btn-next');
-    $('#next2').attr('href', 'page3.html');
+    $('#next2').attr('href', 'page3.html');*/
+      $('#next2').removeClass('grey lighten-2 disabled');
+      $('#next2').addClass('btn-next');
+      $('#next2').attr('href', 'page3.html');
+    }
   }
 });
+
 
 /* __________________Page 3________________*/
 $('#First-name').keyup(function() {
